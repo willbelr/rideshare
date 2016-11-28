@@ -1,0 +1,213 @@
+*:not(a) { font-family: "Times New Roman", Times, serif; font-size:15px; }
+
+a:link { text-decoration: none; color: blue; }
+a:hover { text-decoration: underline; }
+a:visited { color: blue; }
+
+a#logo
+{
+	background: url(img/logo.png) no-repeat;
+	width: 632px;
+	height: 106px;
+	margin-top: -40px
+}
+
+body
+{
+	background-image: url("img/bg/index.php");
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+div { clear:both }
+div.main
+{
+	margin: 5px auto;
+	width: 75%;
+	min-width: 935px;
+	text-align: left;
+	padding:30px;
+	background-image: url("img/bg.png");
+	border: 1px solid black;
+}
+div.msgBox
+{
+	margin: 0 auto;
+	width: 75%;
+	min-width: 935px;
+	text-align: center;
+	padding:30px;
+	background-image: url("img/bg.png");
+	border: 1px solid black;
+}
+div.transparentBox
+{
+	margin: 0 auto;
+	width: 75%;
+	min-width: 935px;
+	text-align: center;
+	padding:10px;
+}
+div.cancelBox
+{
+	text-align: left;
+	display:flex;
+	justify-content: center;
+}
+div.replyForm
+{
+	text-align: left;
+	display:flex;
+	justify-content: center;
+}
+div.liftCommentaire
+{
+	max-width: 280px;
+	margin-top: -10px;
+	margin-bottom: 4px;
+	font-size: small;
+}
+div.logo
+{
+	display:flex;
+	justify-content: center;
+}
+
+img.lien:hover
+{
+	filter: alpha(opacity=70);
+	opacity: .7;
+	cursor:pointer;
+}
+img.contactIcon
+{
+	float:right;
+	margin-top: 10px;
+	margin-right: 3px;
+}
+
+img.pigIcon
+{
+	float:right;
+}
+
+table.menu { border-collapse: collapse;}
+table.lift
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.lift td { padding: 1px; text-align: left; border-bottom: 1px solid #ddd; }
+.lift tr { height: 50px } /* Annonce td */
+.lift tr.noHover { height: 26px; } /* Reply td */
+.lift tr:hover { background-color:#cfd6de }
+.lift tr.noHover:hover { background-color: inherit; }
+
+hr
+{
+    border: 0;
+    height: 1px;
+    background: grey;
+}
+
+button
+{
+	background-color: #cfd6de;
+	border: 1px solid #555;
+	padding: 5px 16px;
+	color: black;
+}
+
+button[type=submit]:disabled
+{
+	background-color: #555;
+	color: white;
+}
+
+button.listButton
+{
+	border: 0;
+	background: transparent;
+	padding: 0;
+}
+
+button.listButton:hover
+{
+	background-color: inherit !important;
+}
+
+input[type=submit]
+{
+	background-color: #cfd6de;
+	border: 1px solid #555;
+	padding: 8px 20px;
+	color:black;
+}
+
+input[type=submit]:hover, button[type=submit]:hover
+{
+	background-color: #b2c0d1; 
+	cursor:pointer;
+}
+
+input[type=submit]:disabled {
+	background-color: #555;
+	color: white;
+}
+
+input[type=text], input[type=password], textarea
+{
+	width: 209px;
+	padding: 2px 4px;
+	border: 1px solid #555;
+}
+
+input[type=text].prix { width:44px; }
+input[type=text]:focus, input[type=password]:focus { background-color: #cfd6de; }
+input[type=text]:disabled, select:disabled
+{
+	color: #555;
+	background-color: #555;
+	background-image: none;
+	border: 1px solid #555;
+}
+
+select {
+	padding: 2px 4px;
+	border: 1px solid #555; 
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: url(img/arrow.png) no-repeat right #ffffff;
+}
+
+
+select.small { width:58px; }
+select.medium { width:68px; }
+select.large { width:85px; }
+select:focus { background-color: #cfd6de; }
+
+.hors-de-vue /* Spamboot fooler */
+{
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0) !important;
+}
+
+/* Awesomeplete CSS */
+/*[hidden] { display: none; }*/
+div.awesomplete { display: inline-block; position: relative; }
+div.awesomplete > ul > li { position: relative; padding: .2em .5em; font-size: 80%; font-family: sans-serif; }
+div.awesomplete > ul > li:hover, div.awesomplete > ul > li[aria-selected="true"] { background: #b2c0d1; }
+div.awesomplete > ul {
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	min-width: 100%;
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: white;
+	border: 1px solid #555;
+}
