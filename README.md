@@ -15,3 +15,7 @@ Improvements:
 - Translate all variables name to english
 - Export all css to index.css
 - Uniformization of css variables
+
+# Requirements
+- Apache with PHP 7 and above
+- PHP mcrypt module
